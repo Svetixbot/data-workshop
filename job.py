@@ -1,7 +1,9 @@
+import sys
 from pyspark import SparkContext
 
+
 logFile = "lorem.txt"  # Should be some file on your system
-sc = SparkContext("local", "Simple App")
+sc = SparkContext(sys.argv[1], "Simple App")
 logData = sc.textFile(logFile).cache()
 
 numAs = logData.filter(lambda s: 'a' in s).count()
