@@ -3,9 +3,21 @@
 1. [Download Spark - Prebuild for Hadoop 2.6](http://spark.apache.org/downloads.html)
 
 2. Try to run 
+
+### Scala api
+
 ``` 
 $YOUR_SPARK_PATH/bin/spark-shell
 ```
+
+### Python api
+
+``` 
+$YOUR_SPARK_PATH/bin/pyspark
+```
+
+#### May need to install python or java
+
 
 3. Once it is loaded you will see scala console:
 ```
